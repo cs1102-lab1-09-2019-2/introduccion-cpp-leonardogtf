@@ -2,7 +2,7 @@
 using std::cout;
 
 int main() {
-         a = true; // declarar tipo de dato
+         bool a = true;
      if (a) {
          cout << "Bien!!!";
      }
