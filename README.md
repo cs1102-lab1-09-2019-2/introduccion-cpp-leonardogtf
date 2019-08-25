@@ -1,10 +1,10 @@
 # Ejercicios usando c++
 
 Nombre:
---
+Leonardo Tarazona
 
 Github Username:
---
+leonardo-tarazona
 
 Instrucciones:
 --
