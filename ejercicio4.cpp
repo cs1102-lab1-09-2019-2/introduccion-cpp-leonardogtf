@@ -1,5 +1,8 @@
-
+#include <iostream>
+using namespace std;
 int main() {
+    int i;
+    int c;
     i = 1;
 
     // Post-incremento asigna i a c y luego incrementa i
@@ -25,4 +28,3 @@ int main() {
     cout<<"El valor de i es: "<<i<<"\n";
 
 }
-
