@@ -1,4 +1,6 @@
-
+#include <string>
+#include <iostream>
+#include <cassert>
 bool esPalindromo(int n) {
     bool palindromo = true;
     std::string s = std::to_string(n);
@@ -9,26 +11,26 @@ bool esPalindromo(int n) {
             break;
         }
     }
-
+    return palindromo;
 }
 
 int main() {
 
-    if (esPalindromo(12321))
+    if (esPalindromo(12321)){
         std::cout<<"Es Palindromo\n";
-    else
+    }else{
         std::cout<<"No es Palindromo\n";
-
-    if (esPalindromo(1221))
+    }
+    if (esPalindromo(1221)){
         std::cout<<"Es Palindromo\n";
-    else
+    }else{
         std::cout<<"No es Palindromo\n";
-
-    if (esPalindromo(8594))
+    }
+    if (esPalindromo(8594)){
         std::cout<<"Es Palindromo\n";
-    else
+    }else{
         std::cout<<"No es Palindromo\n";
-
+    }
     int n;
     std::cout<<"Ingrese un numero: \n";
     std::cin>>n;
@@ -40,8 +42,8 @@ int main() {
     }
 
     assert(esPalindromo(12344321) == true);
-    assert(esPalindromo(1245) == true);
-    assert(esPalindromo(8795978) == false);
+    assert(esPalindromo(1245) == false);
+    assert(esPalindromo(8795978) == true);
 
     return 0;
 }
